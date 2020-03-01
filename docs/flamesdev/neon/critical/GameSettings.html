@@ -128,29 +128,33 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#fullscreen">fullscreen</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#createWindow">createWindow</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#fullscreen">fullscreen</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#height">height</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#maximize">maximize</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#tickRate">tickRate</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#title">title</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#undecorated">undecorated</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#width">width</a></span></code>&nbsp;</td>
 </tr>
@@ -169,14 +173,15 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#GameSettings-java.lang.String-boolean-boolean-boolean-int-int-double-int-">GameSettings</a></span>(java.lang.String&nbsp;title,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/critical/GameSettings.html#GameSettings-java.lang.String-boolean-boolean-boolean-int-int-double-int-boolean-">GameSettings</a></span>(java.lang.String&nbsp;title,
             boolean&nbsp;fullscreen,
             boolean&nbsp;undecorated,
             boolean&nbsp;maximize,
             int&nbsp;width,
             int&nbsp;height,
             double&nbsp;tickRate,
-            int&nbsp;buffers)</code>&nbsp;</td>
+            int&nbsp;buffers,
+            boolean&nbsp;createWindow)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -253,6 +258,15 @@ extends java.lang.Object</pre>
 <pre>public final&nbsp;double tickRate</pre>
 </li>
 </ul>
+<a name="createWindow">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createWindow</h4>
+<pre>public final&nbsp;boolean createWindow</pre>
+</li>
+</ul>
 <a name="width">
 <!--   -->
 </a>
@@ -288,7 +302,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="GameSettings-java.lang.String-boolean-boolean-boolean-int-int-double-int-">
+<a name="GameSettings-java.lang.String-boolean-boolean-boolean-int-int-double-int-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -301,7 +315,8 @@ extends java.lang.Object</pre>
                     int&nbsp;width,
                     int&nbsp;height,
                     double&nbsp;tickRate,
-                    int&nbsp;buffers)</pre>
+                    int&nbsp;buffers,
+                    boolean&nbsp;createWindow)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>title</code> - the title of the window</dd>
@@ -312,6 +327,8 @@ extends java.lang.Object</pre>
 <dd><code>height</code> - the height of the window in pixels</dd>
 <dd><code>tickRate</code> - the number of ticks per second</dd>
 <dd><code>buffers</code> - the number of buffer frames</dd>
+<dd><code>createWindow</code> - whether the game library should create a window; if set to "false", the "render" method for
+                     the game will not be called</dd>
 </dl>
 </li>
 </ul>

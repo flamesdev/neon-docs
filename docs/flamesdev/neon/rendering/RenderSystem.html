@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../flamesdev/neon/rendering/Rectangle.html" title="class in flamesdev.neon.rendering"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../flamesdev/neon/rendering/Units.html" title="class in flamesdev.neon.rendering"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../flamesdev/neon/rendering/TextObject.html" title="class in flamesdev.neon.rendering"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?flamesdev/neon/rendering/RenderSystem.html" target="_top">Frames</a></li>
@@ -109,6 +109,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">RenderSystem</span>
 extends java.lang.Object</pre>
+<div class="block">A class used to render graphics.</div>
 </li>
 </ul>
 </div>
@@ -160,8 +161,15 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/RenderSystem.html#drawText-java.awt.Graphics-flamesdev.neon.rendering.TextObject-">drawText</a></span>(java.awt.Graphics&nbsp;graphics,
+        <a href="../../../flamesdev/neon/rendering/TextObject.html" title="class in flamesdev.neon.rendering">TextObject</a>&nbsp;textObj)</code>
+<div class="block">Draws text.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/RenderSystem.html#setSettings-flamesdev.neon.critical.GameSettings-">setSettings</a></span>(<a href="../../../flamesdev/neon/critical/GameSettings.html" title="class in flamesdev.neon.critical">GameSettings</a>&nbsp;settings)</code>
-<div class="block">Sets the settings of the render engine.</div>
+<div class="block">WARNING: Do not call this method.</div>
 </td>
 </tr>
 </table>
@@ -210,7 +218,8 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setSettings</h4>
 <pre>public static&nbsp;void&nbsp;setSettings(<a href="../../../flamesdev/neon/critical/GameSettings.html" title="class in flamesdev.neon.critical">GameSettings</a>&nbsp;settings)</pre>
-<div class="block">Sets the settings of the render engine. Once a value is defined, it cannot be
+<div class="block">WARNING: Do not call this method. It is only to be called by core library.
+ Sets the settings of the render engine. Once a value is defined, it cannot be
  changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -237,7 +246,7 @@ extends java.lang.Object</pre>
 <a name="drawImage-java.awt.Graphics-flamesdev.neon.rendering.ImageObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>drawImage</h4>
 <pre>public static&nbsp;void&nbsp;drawImage(java.awt.Graphics&nbsp;graphics,
@@ -247,6 +256,22 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>graphics</code> - the graphics object used to draw the game's graphics</dd>
 <dd><code>imgObj</code> - the image to be drawn</dd>
+</dl>
+</li>
+</ul>
+<a name="drawText-java.awt.Graphics-flamesdev.neon.rendering.TextObject-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>drawText</h4>
+<pre>public static&nbsp;void&nbsp;drawText(java.awt.Graphics&nbsp;graphics,
+                            <a href="../../../flamesdev/neon/rendering/TextObject.html" title="class in flamesdev.neon.rendering">TextObject</a>&nbsp;textObj)</pre>
+<div class="block">Draws text.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>graphics</code> - the graphics object used to draw the game's graphics</dd>
+<dd><code>textObj</code> - the text to be drawn</dd>
 </dl>
 </li>
 </ul>
@@ -278,7 +303,7 @@ extends java.lang.Object</pre>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../flamesdev/neon/rendering/Rectangle.html" title="class in flamesdev.neon.rendering"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../flamesdev/neon/rendering/Units.html" title="class in flamesdev.neon.rendering"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../flamesdev/neon/rendering/TextObject.html" title="class in flamesdev.neon.rendering"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?flamesdev/neon/rendering/RenderSystem.html" target="_top">Frames</a></li>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -203,31 +203,43 @@ extends java.lang.Object</pre>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setCenter-flamesdev.neon.physics.Vector2D-">setCenter</a></span>(<a href="../../../flamesdev/neon/physics/Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;center)</code>
-<div class="block">Sets the hitbox's center</div>
+<div class="block">Sets the hitbox's center.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setHigherXBound-double-">setHigherXBound</a></span>(double&nbsp;bound)</code>
-<div class="block">Modifies the hitbox's center to match the bound specified</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setHeight-double-">setHeight</a></span>(double&nbsp;height)</code>
+<div class="block">Sets the hitbox's height</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setHigherYBound-double-">setHigherYBound</a></span>(double&nbsp;bound)</code>
-<div class="block">Modifies the hitbox's center to match the bound specified</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setHigherXBound-double-">setHigherXBound</a></span>(double&nbsp;bound)</code>
+<div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setLowerXBound-double-">setLowerXBound</a></span>(double&nbsp;bound)</code>
-<div class="block">Modifies the hitbox's center to match the bound specified</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setHigherYBound-double-">setHigherYBound</a></span>(double&nbsp;bound)</code>
+<div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setLowerXBound-double-">setLowerXBound</a></span>(double&nbsp;bound)</code>
+<div class="block">Modifies the hitbox's center to match the bound specified.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setLowerYBound-double-">setLowerYBound</a></span>(double&nbsp;bound)</code>
-<div class="block">Modifies the hitbox's center to match the bound specified</div>
+<div class="block">Modifies the hitbox's center to match the bound specified.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/physics/Hitbox.html#setWidth-double-">setWidth</a></span>(double&nbsp;width)</code>
+<div class="block">Sets the hitbox's width</div>
 </td>
 </tr>
 </table>
@@ -297,7 +309,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setLowerXBound</h4>
 <pre>public&nbsp;void&nbsp;setLowerXBound(double&nbsp;bound)</pre>
-<div class="block">Modifies the hitbox's center to match the bound specified</div>
+<div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bound</code> - the specified bound</dd>
@@ -324,7 +336,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setHigherXBound</h4>
 <pre>public&nbsp;void&nbsp;setHigherXBound(double&nbsp;bound)</pre>
-<div class="block">Modifies the hitbox's center to match the bound specified</div>
+<div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bound</code> - the specified bound</dd>
@@ -351,7 +363,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setLowerYBound</h4>
 <pre>public&nbsp;void&nbsp;setLowerYBound(double&nbsp;bound)</pre>
-<div class="block">Modifies the hitbox's center to match the bound specified</div>
+<div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bound</code> - the specified bound</dd>
@@ -378,7 +390,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setHigherYBound</h4>
 <pre>public&nbsp;void&nbsp;setHigherYBound(double&nbsp;bound)</pre>
-<div class="block">Modifies the hitbox's center to match the bound specified</div>
+<div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bound</code> - the specified bound</dd>
@@ -405,7 +417,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>setCenter</h4>
 <pre>public&nbsp;void&nbsp;setCenter(<a href="../../../flamesdev/neon/physics/Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;center)</pre>
-<div class="block">Sets the hitbox's center</div>
+<div class="block">Sets the hitbox's center.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>center</code> - the new position</dd>
@@ -425,6 +437,20 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a name="setWidth-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWidth</h4>
+<pre>public&nbsp;void&nbsp;setWidth(double&nbsp;width)</pre>
+<div class="block">Sets the hitbox's width</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>width</code> - </dd>
+</dl>
+</li>
+</ul>
 <a name="getHeight--">
 <!--   -->
 </a>
@@ -435,6 +461,20 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the hitbox's height</dd>
+</dl>
+</li>
+</ul>
+<a name="setHeight-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setHeight</h4>
+<pre>public&nbsp;void&nbsp;setHeight(double&nbsp;height)</pre>
+<div class="block">Sets the hitbox's height</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>height</code> - </dd>
 </dl>
 </li>
 </ul>
