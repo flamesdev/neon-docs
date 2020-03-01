@@ -17,6 +17,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -67,15 +73,15 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -110,33 +116,6 @@ extends java.lang.Object</pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>java.awt.Color</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#color">color</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#fill">fill</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#hitbox">hitbox</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -162,6 +141,43 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>java.awt.Color</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#getColor--">getColor</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#getHitbox--">getHitbox</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#isFill--">isFill</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#setColor-java.awt.Color-">setColor</a></span>(java.awt.Color&nbsp;color)</code>
+<div class="block">Sets the rectangle's color.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#setFill-boolean-">setFill</a></span>(boolean&nbsp;fill)</code>
+<div class="block">Sets whether the rectangle is to be filled.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/Rectangle.html#setHitbox-flamesdev.neon.physics.Hitbox-">setHitbox</a></span>(<a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;hitbox)</code>
+<div class="block">Sets the rectangle's hitbox.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -177,41 +193,6 @@ extends java.lang.Object</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="hitbox">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>hitbox</h4>
-<pre>public&nbsp;<a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a> hitbox</pre>
-</li>
-</ul>
-<a name="color">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>color</h4>
-<pre>public&nbsp;java.awt.Color color</pre>
-</li>
-</ul>
-<a name="fill">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>fill</h4>
-<pre>public&nbsp;boolean fill</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -232,6 +213,95 @@ extends java.lang.Object</pre>
 <dd><code>hitbox</code> - the hitbox of the rectangle</dd>
 <dd><code>color</code> - the color of the rectangle</dd>
 <dd><code>fill</code> - whether the rectangle should be filled when drawn</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getHitbox--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHitbox</h4>
+<pre>public&nbsp;<a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;getHitbox()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the rectangle's hitbox</dd>
+</dl>
+</li>
+</ul>
+<a name="setHitbox-flamesdev.neon.physics.Hitbox-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setHitbox</h4>
+<pre>public&nbsp;void&nbsp;setHitbox(<a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;hitbox)</pre>
+<div class="block">Sets the rectangle's hitbox.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hitbox</code> - the new hitbox</dd>
+</dl>
+</li>
+</ul>
+<a name="getColor--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColor</h4>
+<pre>public&nbsp;java.awt.Color&nbsp;getColor()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the rectangle's color</dd>
+</dl>
+</li>
+</ul>
+<a name="setColor-java.awt.Color-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setColor</h4>
+<pre>public&nbsp;void&nbsp;setColor(java.awt.Color&nbsp;color)</pre>
+<div class="block">Sets the rectangle's color.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>color</code> - the new color</dd>
+</dl>
+</li>
+</ul>
+<a name="isFill--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFill</h4>
+<pre>public&nbsp;boolean&nbsp;isFill()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>whether is rectangle is to be filled</dd>
+</dl>
+</li>
+</ul>
+<a name="setFill-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setFill</h4>
+<pre>public&nbsp;void&nbsp;setFill(boolean&nbsp;fill)</pre>
+<div class="block">Sets whether the rectangle is to be filled.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fill</code> - the new value</dd>
 </dl>
 </li>
 </ul>
@@ -288,15 +358,15 @@ extends java.lang.Object</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

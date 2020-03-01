@@ -17,6 +17,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -67,15 +73,15 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -110,29 +116,6 @@ extends java.lang.Object</pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/ImageObject.html#hitbox">hitbox</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>java.awt.image.BufferedImage</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/ImageObject.html#sprite">sprite</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -157,6 +140,33 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/ImageObject.html#getHitbox--">getHitbox</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.awt.image.BufferedImage</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/ImageObject.html#getSprite--">getSprite</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/ImageObject.html#setHitbox-flamesdev.neon.physics.Hitbox-">setHitbox</a></span>(<a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;hitbox)</code>
+<div class="block">Sets the object's hitbox.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../flamesdev/neon/rendering/ImageObject.html#setSprite-java.awt.image.BufferedImage-">setSprite</a></span>(java.awt.image.BufferedImage&nbsp;sprite)</code>
+<div class="block">Sets the object's sprite.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -172,32 +182,6 @@ extends java.lang.Object</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="hitbox">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>hitbox</h4>
-<pre>public&nbsp;<a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a> hitbox</pre>
-</li>
-</ul>
-<a name="sprite">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>sprite</h4>
-<pre>public&nbsp;java.awt.image.BufferedImage sprite</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -214,8 +198,70 @@ extends java.lang.Object</pre>
                    java.awt.image.BufferedImage&nbsp;sprite)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>hitbox</code> - the hitbox of the image</dd>
-<dd><code>sprite</code> - the sprite of the image</dd>
+<dd><code>hitbox</code> - the hitbox of the object</dd>
+<dd><code>sprite</code> - the sprite of the object</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getHitbox--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHitbox</h4>
+<pre>public&nbsp;<a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;getHitbox()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the object's hitbox</dd>
+</dl>
+</li>
+</ul>
+<a name="setHitbox-flamesdev.neon.physics.Hitbox-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setHitbox</h4>
+<pre>public&nbsp;void&nbsp;setHitbox(<a href="../../../flamesdev/neon/physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;hitbox)</pre>
+<div class="block">Sets the object's hitbox.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hitbox</code> - the new hitbox</dd>
+</dl>
+</li>
+</ul>
+<a name="getSprite--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSprite</h4>
+<pre>public&nbsp;java.awt.image.BufferedImage&nbsp;getSprite()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the object's sprite</dd>
+</dl>
+</li>
+</ul>
+<a name="setSprite-java.awt.image.BufferedImage-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setSprite</h4>
+<pre>public&nbsp;void&nbsp;setSprite(java.awt.image.BufferedImage&nbsp;sprite)</pre>
+<div class="block">Sets the object's sprite.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sprite</code> - the new sprite</dd>
 </dl>
 </li>
 </ul>
@@ -272,15 +318,15 @@ extends java.lang.Object</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
