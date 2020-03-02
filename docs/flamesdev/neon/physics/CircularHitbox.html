@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":9};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -106,21 +106,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
+<li><a href="Hitbox.html" title="class in flamesdev.neon.physics">flamesdev.neon.physics.Hitbox</a></li>
+<li>
+<ul class="inheritance">
 <li>flamesdev.neon.physics.CircularHitbox</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
-</dl>
 <hr>
 <pre>public class <span class="typeNameLabel">CircularHitbox</span>
-extends java.lang.Object
-implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></pre>
+extends <a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></pre>
 <div class="block">A class used to simulate the physics and interactions of circular hitboxes.</div>
 </li>
 </ul>
@@ -177,114 +177,92 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i1">
-<td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCenter()">getCenter</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor" id="i2">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHeight()">getHeight</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="altColor" id="i2">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHigherXBound()">getHigherXBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="rowColor" id="i3">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHigherYBound()">getHigherYBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i5">
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowerXBound()">getLowerXBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i6">
+<tr class="rowColor" id="i5">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowerYBound()">getLowerYBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i7">
+<tr class="altColor" id="i6">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWidth()">getWidth</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i8">
+<tr class="rowColor" id="i7">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersectsHitbox(flamesdev.neon.physics.Hitbox)">intersectsHitbox</a></span>&#8203;(<a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersectsHitbox(flamesdev.neon.physics.Hitbox)">intersectsHitbox</a></span>&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">WARNING: This method is unimplemented.</div>
+</td>
+</tr>
+<tr class="altColor" id="i8">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preventIntersection(flamesdev.neon.physics.Hitbox)">preventIntersection</a></span>&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">WARNING: This method is unimplemented.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i9">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#keepWithinBounds(double,double,double,double)">keepWithinBounds</a></span>&#8203;(double&nbsp;lowX,
-                double&nbsp;highX,
-                double&nbsp;lowY,
-                double&nbsp;highY)</code></th>
-<td class="colLast">
-<div class="block">Shifts the hitbox so that it fits within the specified bounds.</div>
-</td>
-</tr>
-<tr class="altColor" id="i10">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preventIntersection(flamesdev.neon.physics.Hitbox)">preventIntersection</a></span>&#8203;(<a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
-<td class="colLast">
-<div class="block">WARNING: This method is unimplemented.</div>
-</td>
-</tr>
-<tr class="rowColor" id="i11">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCenter(flamesdev.neon.physics.Vector2D)">setCenter</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;center)</code></th>
-<td class="colLast">
-<div class="block">Sets the hitbox's center.</div>
-</td>
-</tr>
-<tr class="altColor" id="i12">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherXBound(double)">setHigherXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherYBound(double)">setHigherYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerXBound(double)">setLowerXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerYBound(double)">setLowerYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRadiusHeight(double)">setRadiusHeight</a></span>&#8203;(double&nbsp;radius)</code></th>
 <td class="colLast">
 <div class="block">Sets the hitbox's radius in height units.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i17">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRadiusWidth(double)">setRadiusWidth</a></span>&#8203;(double&nbsp;radius)</code></th>
 <td class="colLast">
 <div class="block">Sets the hitbox's radius in width units.</div>
 </td>
 </tr>
-<tr class="altColor" id="i18">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSettings(flamesdev.neon.critical.GameSettings)">setSettings</a></span>&#8203;(<a href="../critical/GameSettings.html" title="class in flamesdev.neon.critical">GameSettings</a>&nbsp;settings)</code></th>
 <td class="colLast">
@@ -295,6 +273,13 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 </table>
 </div>
 </div>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.flamesdev.neon.physics.Hitbox">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;flamesdev.neon.physics.<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></h3>
+<code><a href="Hitbox.html#getCenter()">getCenter</a>, <a href="Hitbox.html#keepWithinBounds(double,double,double,double)">keepWithinBounds</a>, <a href="Hitbox.html#setCenter(flamesdev.neon.physics.Vector2D)">setCenter</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -363,7 +348,7 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <pre class="methodSignature">public&nbsp;double&nbsp;getLowerXBound()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#getLowerXBound()">getLowerXBound</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#getLowerXBound()">getLowerXBound</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the lowest x-value contained in the hitbox</dd>
 </dl>
@@ -376,11 +361,11 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <li class="blockList">
 <h4>setLowerXBound</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setLowerXBound&#8203;(double&nbsp;bound)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Hitbox.html#setLowerXBound(double)">Hitbox</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="Hitbox.html#setLowerXBound(double)">Hitbox</a></code></span></div>
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#setLowerXBound(double)">setLowerXBound</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#setLowerXBound(double)">setLowerXBound</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bound</code> - the specified bound</dd>
 </dl>
@@ -395,7 +380,7 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <pre class="methodSignature">public&nbsp;double&nbsp;getHigherXBound()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#getHigherXBound()">getHigherXBound</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#getHigherXBound()">getHigherXBound</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the highest x-value contained in the hitbox</dd>
 </dl>
@@ -408,11 +393,11 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <li class="blockList">
 <h4>setHigherXBound</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setHigherXBound&#8203;(double&nbsp;bound)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Hitbox.html#setHigherXBound(double)">Hitbox</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="Hitbox.html#setHigherXBound(double)">Hitbox</a></code></span></div>
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#setHigherXBound(double)">setHigherXBound</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#setHigherXBound(double)">setHigherXBound</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bound</code> - the specified bound</dd>
 </dl>
@@ -427,7 +412,7 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <pre class="methodSignature">public&nbsp;double&nbsp;getLowerYBound()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#getLowerYBound()">getLowerYBound</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#getLowerYBound()">getLowerYBound</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the lowest y-value contained in the hitbox</dd>
 </dl>
@@ -440,11 +425,11 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <li class="blockList">
 <h4>setLowerYBound</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setLowerYBound&#8203;(double&nbsp;bound)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Hitbox.html#setLowerYBound(double)">Hitbox</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="Hitbox.html#setLowerYBound(double)">Hitbox</a></code></span></div>
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#setLowerYBound(double)">setLowerYBound</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#setLowerYBound(double)">setLowerYBound</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bound</code> - the specified bound</dd>
 </dl>
@@ -459,7 +444,7 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <pre class="methodSignature">public&nbsp;double&nbsp;getHigherYBound()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#getHigherYBound()">getHigherYBound</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#getHigherYBound()">getHigherYBound</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the highest y-value contained in the hitbox</dd>
 </dl>
@@ -472,45 +457,13 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <li class="blockList">
 <h4>setHigherYBound</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setHigherYBound&#8203;(double&nbsp;bound)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Hitbox.html#setHigherYBound(double)">Hitbox</a></code></span></div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="Hitbox.html#setHigherYBound(double)">Hitbox</a></code></span></div>
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#setHigherYBound(double)">setHigherYBound</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#setHigherYBound(double)">setHigherYBound</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bound</code> - the specified bound</dd>
-</dl>
-</li>
-</ul>
-<a id="getCenter()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getCenter</h4>
-<pre class="methodSignature">public&nbsp;<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;getCenter()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#getCenter()">getCenter</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the hitbox's center</dd>
-</dl>
-</li>
-</ul>
-<a id="setCenter(flamesdev.neon.physics.Vector2D)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setCenter</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setCenter&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;center)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Hitbox.html#setCenter(flamesdev.neon.physics.Vector2D)">Hitbox</a></code></span></div>
-<div class="block">Sets the hitbox's center.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#setCenter(flamesdev.neon.physics.Vector2D)">setCenter</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>center</code> - the new position</dd>
 </dl>
 </li>
 </ul>
@@ -523,7 +476,7 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <pre class="methodSignature">public&nbsp;double&nbsp;getWidth()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#getWidth()">getWidth</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#getWidth()">getWidth</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the hitbox's width</dd>
 </dl>
@@ -538,7 +491,7 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <pre class="methodSignature">public&nbsp;double&nbsp;getHeight()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#getHeight()">getHeight</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#getHeight()">getHeight</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the hitbox's height</dd>
 </dl>
@@ -581,34 +534,11 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <pre class="methodSignature">public&nbsp;boolean&nbsp;containsVector&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;vector)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#containsVector(flamesdev.neon.physics.Vector2D)">containsVector</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#containsVector(flamesdev.neon.physics.Vector2D)">containsVector</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>vector</code> - the specified vector</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>whether the hitbox contains the vector</dd>
-</dl>
-</li>
-</ul>
-<a id="keepWithinBounds(double,double,double,double)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>keepWithinBounds</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;keepWithinBounds&#8203;(double&nbsp;lowX,
-                             double&nbsp;highX,
-                             double&nbsp;lowY,
-                             double&nbsp;highY)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="Hitbox.html#keepWithinBounds(double,double,double,double)">Hitbox</a></code></span></div>
-<div class="block">Shifts the hitbox so that it fits within the specified bounds.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#keepWithinBounds(double,double,double,double)">keepWithinBounds</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>lowX</code> - the low X bound</dd>
-<dd><code>highX</code> - the high X bound</dd>
-<dd><code>lowY</code> - the low Y bound</dd>
-<dd><code>highY</code> - the high Y bound</dd>
 </dl>
 </li>
 </ul>
@@ -618,12 +548,12 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <ul class="blockList">
 <li class="blockList">
 <h4>preventIntersection</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;preventIntersection&#8203;(<a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
+<pre class="methodSignature">public&nbsp;void&nbsp;preventIntersection&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
                          throws java.lang.UnsupportedOperationException</pre>
 <div class="block">WARNING: This method is unimplemented.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#preventIntersection(flamesdev.neon.physics.Hitbox)">preventIntersection</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#preventIntersection(flamesdev.neon.physics.Hitbox)">preventIntersection</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other hitbox</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -637,12 +567,12 @@ implements <a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hit
 <ul class="blockListLast">
 <li class="blockList">
 <h4>intersectsHitbox</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;intersectsHitbox&#8203;(<a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
+<pre class="methodSignature">public&nbsp;boolean&nbsp;intersectsHitbox&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
                          throws java.lang.UnsupportedOperationException</pre>
 <div class="block">WARNING: This method is unimplemented.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#intersectsHitbox(flamesdev.neon.physics.Hitbox)">intersectsHitbox</a></code>&nbsp;in interface&nbsp;<code><a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#intersectsHitbox(flamesdev.neon.physics.Hitbox)">intersectsHitbox</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other hitbox</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

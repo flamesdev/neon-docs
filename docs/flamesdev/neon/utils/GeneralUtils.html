@@ -196,14 +196,16 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="rowColor" id="i5">
 <td class="colFirst"><code>static java.util.List&lt;java.lang.String&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readAllLines(java.lang.String)">readAllLines</a></span>&#8203;(java.lang.String&nbsp;path)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readAllLines(java.lang.String,java.nio.charset.Charset)">readAllLines</a></span>&#8203;(java.lang.String&nbsp;path,
+            java.nio.charset.Charset&nbsp;charset)</code></th>
 <td class="colLast">
 <div class="block">Reads all the lines of text from a file.</div>
 </td>
 </tr>
 <tr class="altColor" id="i6">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readAllText(java.lang.String)">readAllText</a></span>&#8203;(java.lang.String&nbsp;path)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readAllText(java.lang.String,java.nio.charset.Charset)">readAllText</a></span>&#8203;(java.lang.String&nbsp;path,
+           java.nio.charset.Charset&nbsp;charset)</code></th>
 <td class="colLast">
 <div class="block">Reads all the text from a file.</div>
 </td>
@@ -217,24 +219,27 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor" id="i8">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLines(java.lang.String%5B%5D,java.lang.String)">writeLines</a></span>&#8203;(java.lang.String[]&nbsp;lines,
-          java.lang.String&nbsp;path)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLines(java.lang.String%5B%5D,java.lang.String,java.nio.charset.Charset)">writeLines</a></span>&#8203;(java.lang.String[]&nbsp;lines,
+          java.lang.String&nbsp;path,
+          java.nio.charset.Charset&nbsp;charset)</code></th>
 <td class="colLast">
 <div class="block">Writes lines of text to a file.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i9">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLines(java.util.List,java.lang.String)">writeLines</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;lines,
-          java.lang.String&nbsp;path)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLines(java.util.List,java.lang.String,java.nio.charset.Charset)">writeLines</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;lines,
+          java.lang.String&nbsp;path,
+          java.nio.charset.Charset&nbsp;charset)</code></th>
 <td class="colLast">
 <div class="block">Writes lines of text to a file.</div>
 </td>
 </tr>
 <tr class="altColor" id="i10">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeText(java.lang.String,java.lang.String)">writeText</a></span>&#8203;(java.lang.String&nbsp;text,
-         java.lang.String&nbsp;path)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeText(java.lang.String,java.lang.String,java.nio.charset.Charset)">writeText</a></span>&#8203;(java.lang.String&nbsp;text,
+         java.lang.String&nbsp;path,
+         java.nio.charset.Charset&nbsp;charset)</code></th>
 <td class="colLast">
 <div class="block">Writes text to a file.</div>
 </td>
@@ -382,83 +387,93 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="readAllLines(java.lang.String)">
+<a id="readAllLines(java.lang.String,java.nio.charset.Charset)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>readAllLines</h4>
-<pre class="methodSignature">public static&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;readAllLines&#8203;(java.lang.String&nbsp;path)</pre>
+<pre class="methodSignature">public static&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;readAllLines&#8203;(java.lang.String&nbsp;path,
+                                                            java.nio.charset.Charset&nbsp;charset)</pre>
 <div class="block">Reads all the lines of text from a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>path</code> - the path of the file</dd>
+<dd><code>charset</code> - the charset to be used to decode the data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a list of strings containing the data in the file</dd>
+<dd>a list of strings containing the text in the file</dd>
 </dl>
 </li>
 </ul>
-<a id="readAllText(java.lang.String)">
+<a id="readAllText(java.lang.String,java.nio.charset.Charset)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>readAllText</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;readAllText&#8203;(java.lang.String&nbsp;path)</pre>
+<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;readAllText&#8203;(java.lang.String&nbsp;path,
+                                           java.nio.charset.Charset&nbsp;charset)</pre>
 <div class="block">Reads all the text from a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>path</code> - the path of the file</dd>
+<dd><code>charset</code> - the charset to be used to decode the data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the text in the file</dd>
 </dl>
 </li>
 </ul>
-<a id="writeText(java.lang.String,java.lang.String)">
+<a id="writeText(java.lang.String,java.lang.String,java.nio.charset.Charset)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>writeText</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;writeText&#8203;(java.lang.String&nbsp;text,
-                             java.lang.String&nbsp;path)</pre>
+                             java.lang.String&nbsp;path,
+                             java.nio.charset.Charset&nbsp;charset)</pre>
 <div class="block">Writes text to a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>text</code> - the text</dd>
 <dd><code>path</code> - the path of the file</dd>
+<dd><code>charset</code> - the charset to be used to encode the data</dd>
 </dl>
 </li>
 </ul>
-<a id="writeLines(java.util.List,java.lang.String)">
+<a id="writeLines(java.util.List,java.lang.String,java.nio.charset.Charset)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>writeLines</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;writeLines&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;lines,
-                              java.lang.String&nbsp;path)</pre>
+                              java.lang.String&nbsp;path,
+                              java.nio.charset.Charset&nbsp;charset)</pre>
 <div class="block">Writes lines of text to a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lines</code> - the lines of text</dd>
 <dd><code>path</code> - the path of the file</dd>
+<dd><code>charset</code> - the charset to be used to encode the data</dd>
 </dl>
 </li>
 </ul>
-<a id="writeLines(java.lang.String[],java.lang.String)">
+<a id="writeLines(java.lang.String[],java.lang.String,java.nio.charset.Charset)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>writeLines</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;writeLines&#8203;(java.lang.String[]&nbsp;lines,
-                              java.lang.String&nbsp;path)</pre>
+                              java.lang.String&nbsp;path,
+                              java.nio.charset.Charset&nbsp;charset)</pre>
 <div class="block">Writes lines of text to a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lines</code> - the lines of text</dd>
 <dd><code>path</code> - the path of the file</dd>
+<dd><code>charset</code> - the charset to be used to encode the data</dd>
 </dl>
 </li>
 </ul>

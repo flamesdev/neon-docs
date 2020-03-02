@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var data = {"i0":6,"i1":10,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":10,"i10":6,"i11":10,"i12":6,"i13":6,"i14":6,"i15":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -66,13 +66,13 @@ loadScripts(document, 'script');</script>
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -99,18 +99,27 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <main role="main">
 <div class="header">
 <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">flamesdev.neon.physics</a></div>
-<h2 title="Interface Hitbox" class="title">Interface Hitbox</h2>
+<h2 title="Class Hitbox" class="title">Class Hitbox</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>flamesdev.neon.physics.Hitbox</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Known Implementing Classes:</dt>
+<dt>Direct Known Subclasses:</dt>
 <dd><code><a href="CircularHitbox.html" title="class in flamesdev.neon.physics">CircularHitbox</a></code>, <code><a href="RectangularHitbox.html" title="class in flamesdev.neon.physics">RectangularHitbox</a></code></dd>
 </dl>
 <hr>
-<pre>public interface <span class="typeNameLabel">Hitbox</span></pre>
+<pre>public abstract class <span class="typeNameLabel">Hitbox</span>
+extends java.lang.Object</pre>
 <div class="block">An interface for hitboxes.</div>
 </li>
 </ul>
@@ -118,6 +127,31 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<div class="memberSummary">
+<table>
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">Hitbox</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</section>
 <!-- ========== METHOD SUMMARY =========== -->
 <section role="region">
 <ul class="blockList">
@@ -126,7 +160,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Method Summary</h3>
 <div class="memberSummary">
-<div role="tablist" aria-orientation="horizontal"><button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t2" class="tableTab" onclick="show(2);">Instance Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t3" class="tableTab" onclick="show(4);">Abstract Methods</button></div>
+<div role="tablist" aria-orientation="horizontal"><button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t2" class="tableTab" onclick="show(2);">Instance Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t3" class="tableTab" onclick="show(4);">Abstract Methods</button><button role="tab" aria-selected="false" aria-controls="memberSummary_tabpanel" tabindex="-1" onkeydown="switchTab(event)" id="t4" class="tableTab" onclick="show(8);">Concrete Methods</button></div>
 <div id="memberSummary_tabpanel" role="tabpanel">
 <table aria-labelledby="t0">
 <tr>
@@ -136,7 +170,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tbody>
 <tr class="altColor" id="i0">
-<td class="colFirst"><code>boolean</code></td>
+<td class="colFirst"><code>abstract boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsVector(flamesdev.neon.physics.Vector2D)">containsVector</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;vector)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -146,38 +180,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i2">
-<td class="colFirst"><code>double</code></td>
+<td class="colFirst"><code>abstract double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHeight()">getHeight</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i3">
-<td class="colFirst"><code>double</code></td>
+<td class="colFirst"><code>abstract double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHigherXBound()">getHigherXBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i4">
-<td class="colFirst"><code>double</code></td>
+<td class="colFirst"><code>abstract double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHigherYBound()">getHigherYBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i5">
-<td class="colFirst"><code>double</code></td>
+<td class="colFirst"><code>abstract double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowerXBound()">getLowerXBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i6">
-<td class="colFirst"><code>double</code></td>
+<td class="colFirst"><code>abstract double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowerYBound()">getLowerYBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i7">
-<td class="colFirst"><code>double</code></td>
+<td class="colFirst"><code>abstract double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWidth()">getWidth</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i8">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersectsHitbox(flamesdev.neon.physics.Hitbox)">intersectsHitbox</a></span>&#8203;(<a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
+<td class="colFirst"><code>abstract boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersectsHitbox(flamesdev.neon.physics.Hitbox)">intersectsHitbox</a></span>&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i9">
@@ -191,8 +225,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor" id="i10">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preventIntersection(flamesdev.neon.physics.Hitbox)">preventIntersection</a></span>&#8203;(<a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
+<td class="colFirst"><code>abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preventIntersection(flamesdev.neon.physics.Hitbox)">preventIntersection</a></span>&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Shifts the hitbox in order to prevent it from intersecting with another
  hitbox.</div>
@@ -206,28 +240,28 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr class="altColor" id="i12">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherXBound(double)">setHigherXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i13">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherYBound(double)">setHigherYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
 <tr class="altColor" id="i14">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerXBound(double)">setLowerXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i15">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerYBound(double)">setLowerYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
@@ -237,6 +271,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </table>
 </div>
 </div>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
 </li>
 </ul>
 </section>
@@ -246,6 +287,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a id="&lt;init&gt;()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Hitbox</h4>
+<pre>public&nbsp;Hitbox()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 <!-- ============ METHOD DETAIL ========== -->
 <section role="region">
 <ul class="blockList">
@@ -259,7 +319,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getLowerXBound</h4>
-<pre class="methodSignature">double&nbsp;getLowerXBound()</pre>
+<pre class="methodSignature">public abstract&nbsp;double&nbsp;getLowerXBound()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the lowest x-value contained in the hitbox</dd>
@@ -272,7 +332,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setLowerXBound</h4>
-<pre class="methodSignature">void&nbsp;setLowerXBound&#8203;(double&nbsp;bound)</pre>
+<pre class="methodSignature">public abstract&nbsp;void&nbsp;setLowerXBound&#8203;(double&nbsp;bound)</pre>
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -286,7 +346,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getHigherXBound</h4>
-<pre class="methodSignature">double&nbsp;getHigherXBound()</pre>
+<pre class="methodSignature">public abstract&nbsp;double&nbsp;getHigherXBound()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the highest x-value contained in the hitbox</dd>
@@ -299,7 +359,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setHigherXBound</h4>
-<pre class="methodSignature">void&nbsp;setHigherXBound&#8203;(double&nbsp;bound)</pre>
+<pre class="methodSignature">public abstract&nbsp;void&nbsp;setHigherXBound&#8203;(double&nbsp;bound)</pre>
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -313,7 +373,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getLowerYBound</h4>
-<pre class="methodSignature">double&nbsp;getLowerYBound()</pre>
+<pre class="methodSignature">public abstract&nbsp;double&nbsp;getLowerYBound()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the lowest y-value contained in the hitbox</dd>
@@ -326,7 +386,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setLowerYBound</h4>
-<pre class="methodSignature">void&nbsp;setLowerYBound&#8203;(double&nbsp;bound)</pre>
+<pre class="methodSignature">public abstract&nbsp;void&nbsp;setLowerYBound&#8203;(double&nbsp;bound)</pre>
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -340,7 +400,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getHigherYBound</h4>
-<pre class="methodSignature">double&nbsp;getHigherYBound()</pre>
+<pre class="methodSignature">public abstract&nbsp;double&nbsp;getHigherYBound()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the highest y-value contained in the hitbox</dd>
@@ -353,7 +413,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setHigherYBound</h4>
-<pre class="methodSignature">void&nbsp;setHigherYBound&#8203;(double&nbsp;bound)</pre>
+<pre class="methodSignature">public abstract&nbsp;void&nbsp;setHigherYBound&#8203;(double&nbsp;bound)</pre>
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -367,7 +427,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getCenter</h4>
-<pre class="methodSignature"><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;getCenter()</pre>
+<pre class="methodSignature">public&nbsp;<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;getCenter()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the hitbox's center</dd>
@@ -380,7 +440,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>setCenter</h4>
-<pre class="methodSignature">void&nbsp;setCenter&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;center)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCenter&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;center)</pre>
 <div class="block">Sets the hitbox's center.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -394,7 +454,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getWidth</h4>
-<pre class="methodSignature">double&nbsp;getWidth()</pre>
+<pre class="methodSignature">public abstract&nbsp;double&nbsp;getWidth()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the hitbox's width</dd>
@@ -407,7 +467,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>getHeight</h4>
-<pre class="methodSignature">double&nbsp;getHeight()</pre>
+<pre class="methodSignature">public abstract&nbsp;double&nbsp;getHeight()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the hitbox's height</dd>
@@ -420,7 +480,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>containsVector</h4>
-<pre class="methodSignature">boolean&nbsp;containsVector&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;vector)</pre>
+<pre class="methodSignature">public abstract&nbsp;boolean&nbsp;containsVector&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;vector)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>vector</code> - the specified vector</dd>
@@ -435,10 +495,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>keepWithinBounds</h4>
-<pre class="methodSignature">void&nbsp;keepWithinBounds&#8203;(double&nbsp;lowX,
-                      double&nbsp;highX,
-                      double&nbsp;lowY,
-                      double&nbsp;highY)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;keepWithinBounds&#8203;(double&nbsp;lowX,
+                             double&nbsp;highX,
+                             double&nbsp;lowY,
+                             double&nbsp;highY)</pre>
 <div class="block">Shifts the hitbox so that it fits within the specified bounds.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -455,8 +515,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>intersectsHitbox</h4>
-<pre class="methodSignature">boolean&nbsp;intersectsHitbox&#8203;(<a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
-                  throws java.lang.UnsupportedOperationException</pre>
+<pre class="methodSignature">public abstract&nbsp;boolean&nbsp;intersectsHitbox&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
+                                  throws java.lang.UnsupportedOperationException</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other hitbox</dd>
@@ -473,8 +533,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>preventIntersection</h4>
-<pre class="methodSignature">void&nbsp;preventIntersection&#8203;(<a href="Hitbox.html" title="interface in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
-                  throws java.lang.UnsupportedOperationException</pre>
+<pre class="methodSignature">public abstract&nbsp;void&nbsp;preventIntersection&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
+                                  throws java.lang.UnsupportedOperationException</pre>
 <div class="block">Shifts the hitbox in order to prevent it from intersecting with another
  hitbox.</div>
 <dl>
@@ -520,13 +580,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
