@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -141,12 +141,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onExit()">onExit</a></span>()</code></th>
+<td class="colLast">
+<div class="block">A method called when the game is closed.</div>
+</td>
+</tr>
+<tr class="altColor" id="i2">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(java.awt.Graphics)">render</a></span>&#8203;(java.awt.Graphics&nbsp;graphics)</code></th>
 <td class="colLast">
 <div class="block">A method used to render graphics that is called directly after each tick.</div>
 </td>
 </tr>
-<tr class="altColor" id="i2">
+<tr class="rowColor" id="i3">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
 <td class="colLast">
@@ -198,7 +205,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="render(java.awt.Graphics)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>render</h4>
 <pre class="methodSignature">void&nbsp;render&#8203;(java.awt.Graphics&nbsp;graphics)</pre>
@@ -207,6 +214,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>graphics</code> - an object used to draw graphics</dd>
 </dl>
+</li>
+</ul>
+<a id="onExit()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onExit</h4>
+<pre class="methodSignature">void&nbsp;onExit()</pre>
+<div class="block">A method called when the game is closed.</div>
 </li>
 </ul>
 </li>

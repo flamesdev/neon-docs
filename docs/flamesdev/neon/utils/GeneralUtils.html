@@ -227,7 +227,7 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i9">
-<td class="colFirst"><code>static void</code></td>
+<td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLines(java.lang.String%5B%5D,java.lang.String,java.nio.charset.Charset)">writeLines</a></span>&#8203;(java.lang.String[]&nbsp;lines,
           java.lang.String&nbsp;path,
           java.nio.charset.Charset&nbsp;charset)</code></th>
@@ -236,7 +236,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="altColor" id="i10">
-<td class="colFirst"><code>static void</code></td>
+<td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLines(java.util.List,java.lang.String,java.nio.charset.Charset)">writeLines</a></span>&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;lines,
           java.lang.String&nbsp;path,
           java.nio.charset.Charset&nbsp;charset)</code></th>
@@ -245,7 +245,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="rowColor" id="i11">
-<td class="colFirst"><code>static void</code></td>
+<td class="colFirst"><code>static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeText(java.lang.String,java.lang.String,java.nio.charset.Charset)">writeText</a></span>&#8203;(java.lang.String&nbsp;text,
          java.lang.String&nbsp;path,
          java.nio.charset.Charset&nbsp;charset)</code></th>
@@ -410,7 +410,7 @@ extends java.lang.Object</pre>
 <dd><code>path</code> - the path of the file</dd>
 <dd><code>charset</code> - the charset to be used to decode the data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a list of strings containing the text in the file</dd>
+<dd>a list of strings containing the text in the file or null if the file does not exist</dd>
 </dl>
 </li>
 </ul>
@@ -428,7 +428,7 @@ extends java.lang.Object</pre>
 <dd><code>path</code> - the path of the file</dd>
 <dd><code>charset</code> - the charset to be used to decode the data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the text in the file</dd>
+<dd>the text in the file or null if the file does not exist</dd>
 </dl>
 </li>
 </ul>
@@ -438,15 +438,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>writeText</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;writeText&#8203;(java.lang.String&nbsp;text,
-                             java.lang.String&nbsp;path,
-                             java.nio.charset.Charset&nbsp;charset)</pre>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;writeText&#8203;(java.lang.String&nbsp;text,
+                                java.lang.String&nbsp;path,
+                                java.nio.charset.Charset&nbsp;charset)</pre>
 <div class="block">Writes text to a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>text</code> - the text</dd>
 <dd><code>path</code> - the path of the file</dd>
 <dd><code>charset</code> - the charset to be used to encode the data</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>whether the operation was successful</dd>
 </dl>
 </li>
 </ul>
@@ -456,15 +458,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>writeLines</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;writeLines&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;lines,
-                              java.lang.String&nbsp;path,
-                              java.nio.charset.Charset&nbsp;charset)</pre>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;writeLines&#8203;(java.util.List&lt;java.lang.String&gt;&nbsp;lines,
+                                 java.lang.String&nbsp;path,
+                                 java.nio.charset.Charset&nbsp;charset)</pre>
 <div class="block">Writes lines of text to a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lines</code> - the lines of text</dd>
 <dd><code>path</code> - the path of the file</dd>
 <dd><code>charset</code> - the charset to be used to encode the data</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>whether the operation was successful</dd>
 </dl>
 </li>
 </ul>
@@ -474,15 +478,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>writeLines</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;writeLines&#8203;(java.lang.String[]&nbsp;lines,
-                              java.lang.String&nbsp;path,
-                              java.nio.charset.Charset&nbsp;charset)</pre>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;writeLines&#8203;(java.lang.String[]&nbsp;lines,
+                                 java.lang.String&nbsp;path,
+                                 java.nio.charset.Charset&nbsp;charset)</pre>
 <div class="block">Writes lines of text to a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lines</code> - the lines of text</dd>
 <dd><code>path</code> - the path of the file</dd>
 <dd><code>charset</code> - the charset to be used to encode the data</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>whether the operation was successful</dd>
 </dl>
 </li>
 </ul>
