@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var data = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -65,13 +65,13 @@ loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -123,6 +123,48 @@ extends java.lang.Object</pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<div class="memberSummary">
+<table>
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#descent">descent</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.awt.Font</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#font">font</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../physics/RectangularHitbox.html" title="class in flamesdev.neon.physics">RectangularHitbox</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hitbox">hitbox</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#text">text</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <section role="region">
 <ul class="blockList">
@@ -175,46 +217,10 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i1">
-<td class="colFirst"><code>java.awt.Font</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFont()">getFont</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor" id="i2">
-<td class="colFirst"><code><a href="../physics/RectangularHitbox.html" title="class in flamesdev.neon.physics">RectangularHitbox</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHitbox()">getHitbox</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor" id="i3">
-<td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getText()">getText</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor" id="i4">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColor(java.awt.Color)">setColor</a></span>&#8203;(java.awt.Color&nbsp;color)</code></th>
 <td class="colLast">
 <div class="block">Sets the object's color.</div>
-</td>
-</tr>
-<tr class="rowColor" id="i5">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFont(java.awt.Font)">setFont</a></span>&#8203;(java.awt.Font&nbsp;font)</code></th>
-<td class="colLast">
-<div class="block">Sets the object's font.</div>
-</td>
-</tr>
-<tr class="altColor" id="i6">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHitbox(flamesdev.neon.physics.RectangularHitbox)">setHitbox</a></span>&#8203;(<a href="../physics/RectangularHitbox.html" title="class in flamesdev.neon.physics">RectangularHitbox</a>&nbsp;hitbox)</code></th>
-<td class="colLast">
-<div class="block">Sets the hitbox of the object.</div>
-</td>
-</tr>
-<tr class="rowColor" id="i7">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setText(java.lang.String)">setText</a></span>&#8203;(java.lang.String&nbsp;text)</code></th>
-<td class="colLast">
-<div class="block">Sets the object's text.</div>
 </td>
 </tr>
 </tbody>
@@ -237,6 +243,52 @@ extends java.lang.Object</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a id="hitbox">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hitbox</h4>
+<pre>public final&nbsp;<a href="../physics/RectangularHitbox.html" title="class in flamesdev.neon.physics">RectangularHitbox</a> hitbox</pre>
+</li>
+</ul>
+<a id="descent">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>descent</h4>
+<pre>public final&nbsp;double descent</pre>
+</li>
+</ul>
+<a id="text">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>text</h4>
+<pre>public final&nbsp;java.lang.String text</pre>
+</li>
+</ul>
+<a id="font">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>font</h4>
+<pre>public final&nbsp;java.awt.Font font</pre>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <section role="region">
 <ul class="blockList">
@@ -275,87 +327,6 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getHitbox()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getHitbox</h4>
-<pre class="methodSignature">public&nbsp;<a href="../physics/RectangularHitbox.html" title="class in flamesdev.neon.physics">RectangularHitbox</a>&nbsp;getHitbox()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the object's hitbox</dd>
-</dl>
-</li>
-</ul>
-<a id="setHitbox(flamesdev.neon.physics.RectangularHitbox)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setHitbox</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setHitbox&#8203;(<a href="../physics/RectangularHitbox.html" title="class in flamesdev.neon.physics">RectangularHitbox</a>&nbsp;hitbox)</pre>
-<div class="block">Sets the hitbox of the object.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>hitbox</code> - the new hitbox</dd>
-</dl>
-</li>
-</ul>
-<a id="getText()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getText</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getText()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the object's text</dd>
-</dl>
-</li>
-</ul>
-<a id="setText(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setText</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setText&#8203;(java.lang.String&nbsp;text)</pre>
-<div class="block">Sets the object's text.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>text</code> - the new text</dd>
-</dl>
-</li>
-</ul>
-<a id="getFont()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getFont</h4>
-<pre class="methodSignature">public&nbsp;java.awt.Font&nbsp;getFont()</pre>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the object's font</dd>
-</dl>
-</li>
-</ul>
-<a id="setFont(java.awt.Font)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setFont</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setFont&#8203;(java.awt.Font&nbsp;font)</pre>
-<div class="block">Sets the object's font.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>font</code> - the new font</dd>
-</dl>
-</li>
-</ul>
 <a id="getColor()">
 <!--   -->
 </a>
@@ -417,13 +388,13 @@ extends java.lang.Object</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
