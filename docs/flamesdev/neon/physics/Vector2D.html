@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,8 +144,7 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.awt.Point,boolean)">Vector2D</a></span>&#8203;(java.awt.Point&nbsp;point,
-        boolean&nbsp;directMap)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.awt.Point)">Vector2D</a></span>&#8203;(java.awt.Point&nbsp;point)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -187,11 +186,18 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="altColor" id="i2">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#convertCordinateSystem()">convertCordinateSystem</a></span>()</code></th>
+<td class="colLast">
+<div class="block">WARNING: Do not call this method.</div>
+</td>
+</tr>
+<tr class="rowColor" id="i3">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copy()">copy</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#divide(double,double)">divide</a></span>&#8203;(double&nbsp;x,
       double&nbsp;y)</code></th>
@@ -199,24 +205,24 @@ extends java.lang.Object</pre>
 <div class="block">Divides values to the current vector.</div>
 </td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="rowColor" id="i5">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#divide(flamesdev.neon.physics.Vector2D)">divide</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Divides the current vector by another vector.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i5">
+<tr class="altColor" id="i6">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getX()">getX</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i6">
+<tr class="rowColor" id="i7">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getY()">getY</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i7">
+<tr class="altColor" id="i8">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#multiply(double,double)">multiply</a></span>&#8203;(double&nbsp;x,
         double&nbsp;y)</code></th>
@@ -224,14 +230,14 @@ extends java.lang.Object</pre>
 <div class="block">Multiplies values to the current vector.</div>
 </td>
 </tr>
-<tr class="altColor" id="i8">
+<tr class="rowColor" id="i9">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#multiply(flamesdev.neon.physics.Vector2D)">multiply</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Multiplies the current vector by another vector.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i9">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#safeAdd(double,double)">safeAdd</a></span>&#8203;(double&nbsp;x,
        double&nbsp;y)</code></th>
@@ -239,14 +245,14 @@ extends java.lang.Object</pre>
 <div class="block">Adds values to the current vector without changing its value.</div>
 </td>
 </tr>
-<tr class="altColor" id="i10">
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#safeAdd(flamesdev.neon.physics.Vector2D)">safeAdd</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Adds another vector to the current vector without changing its value.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i11">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#safeDivide(double,double)">safeDivide</a></span>&#8203;(double&nbsp;x,
           double&nbsp;y)</code></th>
@@ -254,14 +260,14 @@ extends java.lang.Object</pre>
 <div class="block">Divides values to the current vector without changing its value.</div>
 </td>
 </tr>
-<tr class="altColor" id="i12">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#safeDivide(flamesdev.neon.physics.Vector2D)">safeDivide</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Divides the current vector by another vector without changing its value.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#safeMultiply(double,double)">safeMultiply</a></span>&#8203;(double&nbsp;x,
             double&nbsp;y)</code></th>
@@ -269,14 +275,14 @@ extends java.lang.Object</pre>
 <div class="block">Multiplies values to the current vector without changing its value.</div>
 </td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#safeMultiply(flamesdev.neon.physics.Vector2D)">safeMultiply</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Multiplies the current vector by another vector without changing its value.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="altColor" id="i16">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#safeSubtract(double,double)">safeSubtract</a></span>&#8203;(double&nbsp;x,
             double&nbsp;y)</code></th>
@@ -284,28 +290,28 @@ extends java.lang.Object</pre>
 <div class="block">Subtracts values to the current vector without changing its value.</div>
 </td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code><a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#safeSubtract(flamesdev.neon.physics.Vector2D)">safeSubtract</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">Subtracts the current vector by another vector without changing its value.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i17">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setX(double)">setX</a></span>&#8203;(double&nbsp;x)</code></th>
 <td class="colLast">
 <div class="block">Sets the vector's x-value.</div>
 </td>
 </tr>
-<tr class="altColor" id="i18">
+<tr class="rowColor" id="i19">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setY(double)">setY</a></span>&#8203;(double&nbsp;y)</code></th>
 <td class="colLast">
 <div class="block">Sets the vector's y-value.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i19">
+<tr class="altColor" id="i20">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#subtract(double,double)">subtract</a></span>&#8203;(double&nbsp;x,
         double&nbsp;y)</code></th>
@@ -313,7 +319,7 @@ extends java.lang.Object</pre>
 <div class="block">Subtracts values to the current vector.</div>
 </td>
 </tr>
-<tr class="altColor" id="i20">
+<tr class="rowColor" id="i21">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#subtract(flamesdev.neon.physics.Vector2D)">subtract</a></span>&#8203;(<a href="Vector2D.html" title="class in flamesdev.neon.physics">Vector2D</a>&nbsp;other)</code></th>
 <td class="colLast">
@@ -357,14 +363,13 @@ extends java.lang.Object</pre>
                 double&nbsp;y)</pre>
 </li>
 </ul>
-<a id="&lt;init&gt;(java.awt.Point,boolean)">
+<a id="&lt;init&gt;(java.awt.Point)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Vector2D</h4>
-<pre>public&nbsp;Vector2D&#8203;(java.awt.Point&nbsp;point,
-                boolean&nbsp;directMap)</pre>
+<pre>public&nbsp;Vector2D&#8203;(java.awt.Point&nbsp;point)</pre>
 </li>
 </ul>
 </li>
@@ -377,6 +382,16 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="convertCordinateSystem()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convertCordinateSystem</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;convertCordinateSystem()</pre>
+<div class="block">WARNING: Do not call this method. It is only to be called by core library classes.</div>
+</li>
+</ul>
 <a id="getX()">
 <!--   -->
 </a>
