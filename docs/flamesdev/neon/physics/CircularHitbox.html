@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -177,85 +177,90 @@ extends <a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i1">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHeight()">getHeight</a></span>()</code></th>
+<td class="colFirst"><code><a href="CircularHitbox.html" title="class in flamesdev.neon.physics">CircularHitbox</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copy()">copy</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i2">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHigherXBound()">getHigherXBound</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHeight()">getHeight</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i3">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHigherYBound()">getHigherYBound</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHigherXBound()">getHigherXBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i4">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowerXBound()">getLowerXBound</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHigherYBound()">getHigherYBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i5">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowerYBound()">getLowerYBound</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowerXBound()">getLowerXBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i6">
 <td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWidth()">getWidth</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLowerYBound()">getLowerYBound</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i7">
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWidth()">getWidth</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i8">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersectsHitbox(flamesdev.neon.physics.Hitbox)">intersectsHitbox</a></span>&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">WARNING: This method is unimplemented.</div>
 </td>
 </tr>
-<tr class="altColor" id="i8">
-<td class="colFirst"><code>void</code></td>
+<tr class="rowColor" id="i9">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preventIntersection(flamesdev.neon.physics.Hitbox)">preventIntersection</a></span>&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)</code></th>
 <td class="colLast">
 <div class="block">WARNING: This method is unimplemented.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i9">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherXBound(double)">setHigherXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="altColor" id="i10">
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherYBound(double)">setHigherYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i11">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerXBound(double)">setLowerXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="altColor" id="i12">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerYBound(double)">setLowerYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRadiusHeight(double)">setRadiusHeight</a></span>&#8203;(double&nbsp;radius)</code></th>
 <td class="colLast">
 <div class="block">Sets the hitbox's radius in height units.</div>
 </td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRadiusWidth(double)">setRadiusWidth</a></span>&#8203;(double&nbsp;radius)</code></th>
 <td class="colLast">
@@ -525,14 +530,16 @@ extends <a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>
 <ul class="blockList">
 <li class="blockList">
 <h4>preventIntersection</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;preventIntersection&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
-                         throws java.lang.UnsupportedOperationException</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;preventIntersection&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
+                            throws java.lang.UnsupportedOperationException</pre>
 <div class="block">WARNING: This method is unimplemented.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Hitbox.html#preventIntersection(flamesdev.neon.physics.Hitbox)">preventIntersection</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other hitbox</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>whether the hitboxes collided</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.UnsupportedOperationException</code> - always</dd>
 </dl>
@@ -541,7 +548,7 @@ extends <a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>
 <a id="intersectsHitbox(flamesdev.neon.physics.Hitbox)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>intersectsHitbox</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;intersectsHitbox&#8203;(<a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;other)
@@ -556,6 +563,21 @@ extends <a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>
 <dd>whether the current hitbox intersects the specified hitbox</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.UnsupportedOperationException</code> - always</dd>
+</dl>
+</li>
+</ul>
+<a id="copy()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>copy</h4>
+<pre class="methodSignature">public&nbsp;<a href="CircularHitbox.html" title="class in flamesdev.neon.physics">CircularHitbox</a>&nbsp;copy()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Hitbox.html#copy()">copy</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a copy of the object</dd>
 </dl>
 </li>
 </ul>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,23 +167,28 @@ extends java.lang.Object</pre>
 </tr>
 <tbody>
 <tr class="altColor" id="i0">
+<td class="colFirst"><code><a href="ImageObject.html" title="class in flamesdev.neon.rendering">ImageObject</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#copy()">copy</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i1">
 <td class="colFirst"><code><a href="../physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHitbox()">getHitbox</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i1">
+<tr class="altColor" id="i2">
 <td class="colFirst"><code>java.awt.image.BufferedImage</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSprite()">getSprite</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i2">
+<tr class="rowColor" id="i3">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHitbox(flamesdev.neon.physics.Hitbox)">setHitbox</a></span>&#8203;(<a href="../physics/Hitbox.html" title="class in flamesdev.neon.physics">Hitbox</a>&nbsp;hitbox)</code></th>
 <td class="colLast">
 <div class="block">Sets the object's hitbox.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSprite(java.awt.image.BufferedImage)">setSprite</a></span>&#8203;(java.awt.image.BufferedImage&nbsp;sprite)</code></th>
 <td class="colLast">
@@ -285,7 +290,7 @@ extends java.lang.Object</pre>
 <a id="setSprite(java.awt.image.BufferedImage)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setSprite</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setSprite&#8203;(java.awt.image.BufferedImage&nbsp;sprite)</pre>
@@ -293,6 +298,19 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sprite</code> - the new sprite</dd>
+</dl>
+</li>
+</ul>
+<a id="copy()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>copy</h4>
+<pre class="methodSignature">public&nbsp;<a href="ImageObject.html" title="class in flamesdev.neon.rendering">ImageObject</a>&nbsp;copy()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a copy of the object</dd>
 </dl>
 </li>
 </ul>
