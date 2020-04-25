@@ -145,13 +145,23 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fullscreen">fullscreen</a></span></code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#frameRate">frameRate</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fullscreen">fullscreen</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#maximize">maximize</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sleepThread">sleepThread</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -191,13 +201,15 @@ extends java.lang.Object</pre>
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,boolean,boolean,boolean,int,int,double,int,boolean)">GameSettings</a></span>&#8203;(java.lang.String&nbsp;title,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,boolean,boolean,boolean,int,int,double,double,boolean,int,boolean)">GameSettings</a></span>&#8203;(java.lang.String&nbsp;title,
             boolean&nbsp;fullscreen,
             boolean&nbsp;undecorated,
             boolean&nbsp;maximize,
             int&nbsp;width,
             int&nbsp;height,
             double&nbsp;tickRate,
+            double&nbsp;frameRate,
+            boolean&nbsp;sleepThread,
             int&nbsp;buffers,
             boolean&nbsp;createWindow)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -320,6 +332,24 @@ extends java.lang.Object</pre>
 <pre>public final&nbsp;double tickRate</pre>
 </li>
 </ul>
+<a id="frameRate">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>frameRate</h4>
+<pre>public final&nbsp;double frameRate</pre>
+</li>
+</ul>
+<a id="sleepThread">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sleepThread</h4>
+<pre>public final&nbsp;boolean sleepThread</pre>
+</li>
+</ul>
 <a id="createWindow">
 <!--   -->
 </a>
@@ -339,7 +369,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.String,boolean,boolean,boolean,int,int,double,int,boolean)">
+<a id="&lt;init&gt;(java.lang.String,boolean,boolean,boolean,int,int,double,double,boolean,int,boolean)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -352,6 +382,8 @@ extends java.lang.Object</pre>
                     int&nbsp;width,
                     int&nbsp;height,
                     double&nbsp;tickRate,
+                    double&nbsp;frameRate,
+                    boolean&nbsp;sleepThread,
                     int&nbsp;buffers,
                     boolean&nbsp;createWindow)</pre>
 <dl>
@@ -363,6 +395,8 @@ extends java.lang.Object</pre>
 <dd><code>width</code> - the width of the window in pixels</dd>
 <dd><code>height</code> - the height of the window in pixels</dd>
 <dd><code>tickRate</code> - the number of ticks per second</dd>
+<dd><code>frameRate</code> - the number of frames per secon</dd>
+<dd><code>sleepThread</code> - whether the thread should be sleeped</dd>
 <dd><code>buffers</code> - the number of buffer frames</dd>
 <dd><code>createWindow</code> - whether the game library should create a window; if set to "false", the "render" method for
                      the game will not be called</dd>

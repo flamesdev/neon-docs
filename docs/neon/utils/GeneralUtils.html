@@ -233,8 +233,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="rowColor" id="i9">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readText(java.lang.String,java.nio.charset.Charset)">readText</a></span>&#8203;(java.lang.String&nbsp;path,
-        java.nio.charset.Charset&nbsp;charset)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readText(java.lang.String)">readText</a></span>&#8203;(java.lang.String&nbsp;path)</code></th>
 <td class="colLast">
 <div class="block">Reads text from a file.</div>
 </td>
@@ -259,9 +258,8 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor" id="i12">
 <td class="colFirst"><code>static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeText(java.lang.String,java.lang.String,java.nio.charset.Charset)">writeText</a></span>&#8203;(java.lang.String&nbsp;text,
-         java.lang.String&nbsp;path,
-         java.nio.charset.Charset&nbsp;charset)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeText(java.lang.String,java.lang.String)">writeText</a></span>&#8203;(java.lang.String&nbsp;text,
+         java.lang.String&nbsp;path)</code></th>
 <td class="colLast">
 <div class="block">Writes text to a file.</div>
 </td>
@@ -428,39 +426,35 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="readText(java.lang.String,java.nio.charset.Charset)">
+<a id="readText(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>readText</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;readText&#8203;(java.lang.String&nbsp;path,
-                                        java.nio.charset.Charset&nbsp;charset)</pre>
+<pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;readText&#8203;(java.lang.String&nbsp;path)</pre>
 <div class="block">Reads text from a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>path</code> - the path of the file</dd>
-<dd><code>charset</code> - the charset to be used to decode the data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the text in the file or null if the file does not exist</dd>
 </dl>
 </li>
 </ul>
-<a id="writeText(java.lang.String,java.lang.String,java.nio.charset.Charset)">
+<a id="writeText(java.lang.String,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>writeText</h4>
 <pre class="methodSignature">public static&nbsp;boolean&nbsp;writeText&#8203;(java.lang.String&nbsp;text,
-                                java.lang.String&nbsp;path,
-                                java.nio.charset.Charset&nbsp;charset)</pre>
+                                java.lang.String&nbsp;path)</pre>
 <div class="block">Writes text to a file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>text</code> - the text</dd>
 <dd><code>path</code> - the path of the file</dd>
-<dd><code>charset</code> - the charset to be used to encode the data</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>whether the operation was successful</dd>
 </dl>
