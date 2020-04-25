@@ -1,5 +1,5 @@
-flamesdev.neon.critical
-flamesdev.neon.input
-flamesdev.neon.physics
-flamesdev.neon.rendering
-flamesdev.neon.utils
+neon.critical
+neon.input
+neon.physics
+neon.rendering
+neon.utils
