@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":10,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":10,"i11":6,"i12":10,"i13":6,"i14":6,"i15":6,"i16":6};
+var data = {"i0":6,"i1":6,"i2":10,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":10,"i11":10,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -230,46 +230,46 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="rowColor" id="i11">
-<td class="colFirst"><code>abstract boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preventIntersection(neon.physics.Hitbox)">preventIntersection</a></span>&#8203;(<a href="Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;other)</code></th>
-<td class="colLast">
-<div class="block">Shifts the hitbox in order to prevent it from intersecting with another
- hitbox.</div>
-</td>
-</tr>
-<tr class="altColor" id="i12">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCenter(neon.physics.Vector2d)">setCenter</a></span>&#8203;(<a href="Vector2d.html" title="class in neon.physics">Vector2d</a>&nbsp;center)</code></th>
 <td class="colLast">
 <div class="block">Sets the hitbox's center.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherXBound(double)">setHigherXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherYBound(double)">setHigherYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerXBound(double)">setLowerXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerYBound(double)">setLowerYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
+</td>
+</tr>
+<tr class="altColor" id="i16">
+<td class="colFirst"><code>abstract boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unintersect(neon.physics.Hitbox)">unintersect</a></span>&#8203;(<a href="Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">Shifts the hitbox in order to prevent it from intersecting with another
+ hitbox.</div>
 </td>
 </tr>
 </tbody>
@@ -532,16 +532,16 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="preventIntersection(neon.physics.Hitbox)">
+<a id="unintersect(neon.physics.Hitbox)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>preventIntersection</h4>
-<pre class="methodSignature">public abstract&nbsp;boolean&nbsp;preventIntersection&#8203;(<a href="Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;other)
-                                     throws java.lang.UnsupportedOperationException</pre>
+<h4>unintersect</h4>
+<pre class="methodSignature">public abstract&nbsp;boolean&nbsp;unintersect&#8203;(<a href="Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;other)
+                             throws java.lang.UnsupportedOperationException</pre>
 <div class="block">Shifts the hitbox in order to prevent it from intersecting with another
- hitbox.</div>
+ hitbox. When shifting, the hitbox takes the path of least resistance.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other hitbox</dd>

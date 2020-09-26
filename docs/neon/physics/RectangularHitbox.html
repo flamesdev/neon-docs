@@ -224,53 +224,53 @@ extends <a href="Hitbox.html" title="class in neon.physics">Hitbox</a></pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i9">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#preventIntersection(neon.physics.Hitbox)">preventIntersection</a></span>&#8203;(<a href="Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;other)</code></th>
-<td class="colLast">
-<div class="block">Shifts the hitbox in order to prevent it from intersecting with another
- hitbox.</div>
-</td>
-</tr>
-<tr class="altColor" id="i10">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHeight(double)">setHeight</a></span>&#8203;(double&nbsp;height)</code></th>
 <td class="colLast">
 <div class="block">Sets the collider's height.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i11">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherXBound(double)">setHigherXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="altColor" id="i12">
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHigherYBound(double)">setHigherYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerXBound(double)">setLowerXBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLowerYBound(double)">setLowerYBound</a></span>&#8203;(double&nbsp;bound)</code></th>
 <td class="colLast">
 <div class="block">Modifies the hitbox's center to match the bound specified.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setWidth(double)">setWidth</a></span>&#8203;(double&nbsp;width)</code></th>
 <td class="colLast">
 <div class="block">Sets the collider's width.</div>
+</td>
+</tr>
+<tr class="rowColor" id="i15">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unintersect(neon.physics.Hitbox)">unintersect</a></span>&#8203;(<a href="Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;other)</code></th>
+<td class="colLast">
+<div class="block">Shifts the hitbox in order to prevent it from intersecting with another
+ hitbox.</div>
 </td>
 </tr>
 </tbody>
@@ -542,19 +542,19 @@ extends <a href="Hitbox.html" title="class in neon.physics">Hitbox</a></pre>
 </dl>
 </li>
 </ul>
-<a id="preventIntersection(neon.physics.Hitbox)">
+<a id="unintersect(neon.physics.Hitbox)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>preventIntersection</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;preventIntersection&#8203;(<a href="Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;other)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="Hitbox.html#preventIntersection(neon.physics.Hitbox)">Hitbox</a></code></span></div>
+<h4>unintersect</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;unintersect&#8203;(<a href="Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;other)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="Hitbox.html#unintersect(neon.physics.Hitbox)">Hitbox</a></code></span></div>
 <div class="block">Shifts the hitbox in order to prevent it from intersecting with another
- hitbox.</div>
+ hitbox. When shifting, the hitbox takes the path of least resistance.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Hitbox.html#preventIntersection(neon.physics.Hitbox)">preventIntersection</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in neon.physics">Hitbox</a></code></dd>
+<dd><code><a href="Hitbox.html#unintersect(neon.physics.Hitbox)">unintersect</a></code>&nbsp;in class&nbsp;<code><a href="Hitbox.html" title="class in neon.physics">Hitbox</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>other</code> - the other hitbox</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
