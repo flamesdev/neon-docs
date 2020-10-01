@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,18 +167,30 @@ extends java.lang.Object</pre>
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#align(neon.physics.Hitbox,neon.rendering.HorizontalAlignment)">align</a></span>&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox,
-     <a href="HorizontalAlignment.html" title="enum in neon.rendering">HorizontalAlignment</a>&nbsp;alignment)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#alignBottom(neon.physics.Hitbox)">alignBottom</a></span>&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox)</code></th>
 <td class="colLast">
-<div class="block">Aligns the hitbox horizontally.</div>
+<div class="block">Aligns the hitbox to its bottom.</div>
 </td>
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#align(neon.physics.Hitbox,neon.rendering.VerticalAlignment)">align</a></span>&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox,
-     <a href="VerticalAlignment.html" title="enum in neon.rendering">VerticalAlignment</a>&nbsp;alignment)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#alignLeft(neon.physics.Hitbox)">alignLeft</a></span>&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox)</code></th>
 <td class="colLast">
-<div class="block">Aligns the hitbox vertically.</div>
+<div class="block">Aligns the hitbox to its left.</div>
+</td>
+</tr>
+<tr class="altColor" id="i2">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#alignRight(neon.physics.Hitbox)">alignRight</a></span>&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox)</code></th>
+<td class="colLast">
+<div class="block">Aligns the hitbox to its right.</div>
+</td>
+</tr>
+<tr class="rowColor" id="i3">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#alignTop(neon.physics.Hitbox)">alignTop</a></span>&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox)</code></th>
+<td class="colLast">
+<div class="block">Aligns the hitbox to its top.</div>
 </td>
 </tr>
 </tbody>
@@ -227,35 +239,59 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="align(neon.physics.Hitbox,neon.rendering.HorizontalAlignment)">
+<a id="alignLeft(neon.physics.Hitbox)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>align</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;align&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox,
-                         <a href="HorizontalAlignment.html" title="enum in neon.rendering">HorizontalAlignment</a>&nbsp;alignment)</pre>
-<div class="block">Aligns the hitbox horizontally.</div>
+<h4>alignLeft</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;alignLeft&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox)</pre>
+<div class="block">Aligns the hitbox to its left.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>hitbox</code> - the hitbox</dd>
-<dd><code>alignment</code> - the desired alignment</dd>
 </dl>
 </li>
 </ul>
-<a id="align(neon.physics.Hitbox,neon.rendering.VerticalAlignment)">
+<a id="alignRight(neon.physics.Hitbox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>alignRight</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;alignRight&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox)</pre>
+<div class="block">Aligns the hitbox to its right.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hitbox</code> - the hitbox</dd>
+</dl>
+</li>
+</ul>
+<a id="alignBottom(neon.physics.Hitbox)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>alignBottom</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;alignBottom&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox)</pre>
+<div class="block">Aligns the hitbox to its bottom.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hitbox</code> - the hitbox</dd>
+</dl>
+</li>
+</ul>
+<a id="alignTop(neon.physics.Hitbox)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>align</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;align&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox,
-                         <a href="VerticalAlignment.html" title="enum in neon.rendering">VerticalAlignment</a>&nbsp;alignment)</pre>
-<div class="block">Aligns the hitbox vertically.</div>
+<h4>alignTop</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;alignTop&#8203;(<a href="../physics/Hitbox.html" title="class in neon.physics">Hitbox</a>&nbsp;hitbox)</pre>
+<div class="block">Aligns the hitbox to its top.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>hitbox</code> - the hitbox</dd>
-<dd><code>alignment</code> - the desired alignment</dd>
 </dl>
 </li>
 </ul>
