@@ -141,42 +141,42 @@ extends java.lang.Object</pre>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createWindow">createWindow</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doCreateWindow">doCreateWindow</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doFullscreen">doFullscreen</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doMaximize">doMaximize</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSleepThread">doSleepThread</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#frameRate">frameRate</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fullscreen">fullscreen</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#maximize">maximize</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isUndecorated">isUndecorated</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sleepThread">sleepThread</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tickRate">tickRate</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#title">title</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#undecorated">undecorated</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -202,16 +202,16 @@ extends java.lang.Object</pre>
 <tbody>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,boolean,boolean,boolean,int,int,double,double,boolean,int,boolean)">GameSettings</a></span>&#8203;(java.lang.String&nbsp;title,
-            boolean&nbsp;fullscreen,
-            boolean&nbsp;undecorated,
-            boolean&nbsp;maximize,
+            boolean&nbsp;doFullscreen,
+            boolean&nbsp;isUndecorated,
+            boolean&nbsp;doMaximize,
             int&nbsp;width,
             int&nbsp;height,
             double&nbsp;tickRate,
             double&nbsp;frameRate,
-            boolean&nbsp;sleepThread,
-            int&nbsp;buffers,
-            boolean&nbsp;createWindow)</code></th>
+            boolean&nbsp;doSleepThread,
+            int&nbsp;bufferCount,
+            boolean&nbsp;doCreateWindow)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -239,7 +239,7 @@ extends java.lang.Object</pre>
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBuffers()">getBuffers</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBufferCount()">getBufferCount</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i1">
@@ -296,31 +296,31 @@ extends java.lang.Object</pre>
 <pre>public final&nbsp;java.lang.String title</pre>
 </li>
 </ul>
-<a id="fullscreen">
+<a id="doFullscreen">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>fullscreen</h4>
-<pre>public final&nbsp;boolean fullscreen</pre>
+<h4>doFullscreen</h4>
+<pre>public final&nbsp;boolean doFullscreen</pre>
 </li>
 </ul>
-<a id="maximize">
+<a id="doMaximize">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>maximize</h4>
-<pre>public final&nbsp;boolean maximize</pre>
+<h4>doMaximize</h4>
+<pre>public final&nbsp;boolean doMaximize</pre>
 </li>
 </ul>
-<a id="undecorated">
+<a id="isUndecorated">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>undecorated</h4>
-<pre>public final&nbsp;boolean undecorated</pre>
+<h4>isUndecorated</h4>
+<pre>public final&nbsp;boolean isUndecorated</pre>
 </li>
 </ul>
 <a id="tickRate">
@@ -341,22 +341,22 @@ extends java.lang.Object</pre>
 <pre>public final&nbsp;double frameRate</pre>
 </li>
 </ul>
-<a id="sleepThread">
+<a id="doSleepThread">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>sleepThread</h4>
-<pre>public final&nbsp;boolean sleepThread</pre>
+<h4>doSleepThread</h4>
+<pre>public final&nbsp;boolean doSleepThread</pre>
 </li>
 </ul>
-<a id="createWindow">
+<a id="doCreateWindow">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>createWindow</h4>
-<pre>public final&nbsp;boolean createWindow</pre>
+<h4>doCreateWindow</h4>
+<pre>public final&nbsp;boolean doCreateWindow</pre>
 </li>
 </ul>
 </li>
@@ -376,30 +376,30 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>GameSettings</h4>
 <pre>public&nbsp;GameSettings&#8203;(java.lang.String&nbsp;title,
-                    boolean&nbsp;fullscreen,
-                    boolean&nbsp;undecorated,
-                    boolean&nbsp;maximize,
+                    boolean&nbsp;doFullscreen,
+                    boolean&nbsp;isUndecorated,
+                    boolean&nbsp;doMaximize,
                     int&nbsp;width,
                     int&nbsp;height,
                     double&nbsp;tickRate,
                     double&nbsp;frameRate,
-                    boolean&nbsp;sleepThread,
-                    int&nbsp;buffers,
-                    boolean&nbsp;createWindow)</pre>
+                    boolean&nbsp;doSleepThread,
+                    int&nbsp;bufferCount,
+                    boolean&nbsp;doCreateWindow)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>title</code> - the title of the window</dd>
-<dd><code>fullscreen</code> - whether the window should be fullscreen</dd>
-<dd><code>undecorated</code> - whether the window should be decorated</dd>
-<dd><code>maximize</code> - whether the window should be maximized</dd>
+<dd><code>doFullscreen</code> - whether the window should be fullscreen</dd>
+<dd><code>isUndecorated</code> - whether the window should be decorated</dd>
+<dd><code>doMaximize</code> - whether the window should be maximized</dd>
 <dd><code>width</code> - the width of the window in pixels</dd>
 <dd><code>height</code> - the height of the window in pixels</dd>
 <dd><code>tickRate</code> - the number of ticks per second</dd>
 <dd><code>frameRate</code> - the number of frames per second</dd>
-<dd><code>sleepThread</code> - whether the thread should be sleeped</dd>
-<dd><code>buffers</code> - the number of buffer frames</dd>
-<dd><code>createWindow</code> - whether the game library should create a window; if set to "false", the "render" method for
-                     the game will not be called</dd>
+<dd><code>doSleepThread</code> - whether the thread should be put to sleep</dd>
+<dd><code>bufferCount</code> - the number of buffer frames</dd>
+<dd><code>doCreateWindow</code> - whether the game library should create a window; if set to "false", the
+     "render" method for the game will not be called</dd>
 </dl>
 </li>
 </ul>
@@ -439,13 +439,13 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="getBuffers()">
+<a id="getBufferCount()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getBuffers</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;getBuffers()</pre>
+<h4>getBufferCount</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getBufferCount()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the number of buffers used to render graphics</dd>
