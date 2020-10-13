@@ -208,7 +208,7 @@ extends java.lang.Object</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pluralCheck(double,java.lang.String,java.lang.String,boolean)">pluralCheck</a></span>&#8203;(double&nbsp;number,
            java.lang.String&nbsp;singular,
            java.lang.String&nbsp;plural,
-           boolean&nbsp;inclusive)</code></th>
+           boolean&nbsp;doInclude)</code></th>
 <td class="colLast">
 <div class="block">Checks whether a noun should use its singular or plural form and returns the correct one.</div>
 </td>
@@ -218,7 +218,7 @@ extends java.lang.Object</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pluralCheck(int,java.lang.String,java.lang.String,boolean)">pluralCheck</a></span>&#8203;(int&nbsp;number,
            java.lang.String&nbsp;singular,
            java.lang.String&nbsp;plural,
-           boolean&nbsp;inclusive)</code></th>
+           boolean&nbsp;doInclude)</code></th>
 <td class="colLast">
 <div class="block">Checks whether a noun should use its singular or plural form and returns the correct one.</div>
 </td>
@@ -338,7 +338,7 @@ extends java.lang.Object</pre>
 <dd><code>min</code> - the minimum value</dd>
 <dd><code>max</code> - the maximum value</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>whether the value is within the specified range</dd>
+<dd>whether the value is within the specified range (inclusive)</dd>
 </dl>
 </li>
 </ul>
@@ -509,14 +509,14 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;pluralCheck&#8203;(int&nbsp;number,
                                            java.lang.String&nbsp;singular,
                                            java.lang.String&nbsp;plural,
-                                           boolean&nbsp;inclusive)</pre>
+                                           boolean&nbsp;doInclude)</pre>
 <div class="block">Checks whether a noun should use its singular or plural form and returns the correct one.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>number</code> - the quantity of the noun</dd>
 <dd><code>singular</code> - the singular form of the word</dd>
 <dd><code>plural</code> - the plural form of the word</dd>
-<dd><code>inclusive</code> - whether the result should include the number</dd>
+<dd><code>doInclude</code> - whether the result should include the number</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the correct form</dd>
 </dl>
@@ -531,14 +531,14 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public static&nbsp;java.lang.String&nbsp;pluralCheck&#8203;(double&nbsp;number,
                                            java.lang.String&nbsp;singular,
                                            java.lang.String&nbsp;plural,
-                                           boolean&nbsp;inclusive)</pre>
+                                           boolean&nbsp;doInclude)</pre>
 <div class="block">Checks whether a noun should use its singular or plural form and returns the correct one.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>number</code> - the quantity of the noun</dd>
 <dd><code>singular</code> - the singular form of the word</dd>
 <dd><code>plural</code> - the plural form of the word</dd>
-<dd><code>inclusive</code> - whether the result should include the number</dd>
+<dd><code>doInclude</code> - whether the result should include the number</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the correct form</dd>
 </dl>
