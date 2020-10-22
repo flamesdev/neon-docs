@@ -146,16 +146,6 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doFullscreen">doFullscreen</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doMaximize">doMaximize</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doSleepThread">doSleepThread</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -165,18 +155,18 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isUndecorated">isUndecorated</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tickRate">tickRate</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#title">title</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="WindowOption.html" title="enum in neon.critical">WindowOption</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#windowOption">windowOption</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -201,10 +191,8 @@ extends java.lang.Object</pre>
 </tr>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,boolean,boolean,boolean,int,int,double,double,boolean,int,boolean)">GameSettings</a></span>&#8203;(java.lang.String&nbsp;title,
-            boolean&nbsp;doFullscreen,
-            boolean&nbsp;isUndecorated,
-            boolean&nbsp;doMaximize,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,neon.critical.WindowOption,int,int,double,double,boolean,int,boolean)">GameSettings</a></span>&#8203;(java.lang.String&nbsp;title,
+            <a href="WindowOption.html" title="enum in neon.critical">WindowOption</a>&nbsp;windowOption,
             int&nbsp;width,
             int&nbsp;height,
             double&nbsp;tickRate,
@@ -296,31 +284,13 @@ extends java.lang.Object</pre>
 <pre>public final&nbsp;java.lang.String title</pre>
 </li>
 </ul>
-<a id="doFullscreen">
+<a id="windowOption">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>doFullscreen</h4>
-<pre>public final&nbsp;boolean doFullscreen</pre>
-</li>
-</ul>
-<a id="doMaximize">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>doMaximize</h4>
-<pre>public final&nbsp;boolean doMaximize</pre>
-</li>
-</ul>
-<a id="isUndecorated">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isUndecorated</h4>
-<pre>public final&nbsp;boolean isUndecorated</pre>
+<h4>windowOption</h4>
+<pre>public final&nbsp;<a href="WindowOption.html" title="enum in neon.critical">WindowOption</a> windowOption</pre>
 </li>
 </ul>
 <a id="tickRate">
@@ -369,16 +339,14 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.String,boolean,boolean,boolean,int,int,double,double,boolean,int,boolean)">
+<a id="&lt;init&gt;(java.lang.String,neon.critical.WindowOption,int,int,double,double,boolean,int,boolean)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>GameSettings</h4>
 <pre>public&nbsp;GameSettings&#8203;(java.lang.String&nbsp;title,
-                    boolean&nbsp;doFullscreen,
-                    boolean&nbsp;isUndecorated,
-                    boolean&nbsp;doMaximize,
+                    <a href="WindowOption.html" title="enum in neon.critical">WindowOption</a>&nbsp;windowOption,
                     int&nbsp;width,
                     int&nbsp;height,
                     double&nbsp;tickRate,
@@ -389,9 +357,7 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>title</code> - the title of the window</dd>
-<dd><code>doFullscreen</code> - whether the window should be fullscreen</dd>
-<dd><code>isUndecorated</code> - whether the window should be decorated</dd>
-<dd><code>doMaximize</code> - whether the window should be maximized</dd>
+<dd><code>windowOption</code> - additional window settings</dd>
 <dd><code>width</code> - the width of the window in pixels</dd>
 <dd><code>height</code> - the height of the window in pixels</dd>
 <dd><code>tickRate</code> - the number of ticks per second</dd>
